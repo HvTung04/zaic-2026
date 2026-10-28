@@ -5,7 +5,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 
 
 class LLM:
-    def __init__(self, model_id="Qwen/Qwen2.5-3B-Instruct", device="cuda"):
+    def __init__(self, model_id="Qwen/Qwen3-1.7B", device="cuda"):
         self.tok = AutoTokenizer.from_pretrained(model_id, local_files_only=True)
         self.model = AutoModelForCausalLM.from_pretrained(
             model_id, dtype=torch.float16, device_map=device, local_files_only=True
