@@ -10,6 +10,7 @@ dependencies = [
     "torchaudio",
     "transformers",
     "accelerate",
+    "sherpa-onnx>=2.0.1",
 ]
 
 [[tool.uv.index]]
